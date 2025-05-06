@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        body {
+            background-color: lightgray;
+            color: black;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Aqui vai o resultado</p>
+    <p>Estou aprendendo <strong>DOMs</strong></p>
+    <div>Clique em mim</div>
+
+    <script>
+        var corpo = window.document.body
+        var r = document.getElementsByTagName('p')[1]
+        document.write(r.innerHTML)
+        corpo.style.backgroundColor = 'lightgreen'
+    </script>
+</body>
+</html>
