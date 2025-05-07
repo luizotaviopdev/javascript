@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <p>Aqui vai o resultado</p>
+    <p id="bah">Aqui vai o resultado</p>
     <p>Estou aprendendo <strong>DOMs</strong></p>
     <div>Clique em mim</div>
 
@@ -23,6 +23,9 @@
         var r = document.getElementsByTagName('p')[1]
         document.write(r.innerHTML)
         corpo.style.backgroundColor = 'lightgreen'
+
+        var d = document.querySelector('p#bah')
+        d.style.background= 'green'
     </script>
 </body>
 </html>
