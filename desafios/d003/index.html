@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clique nos botões</title>
-    <style>
+    <title>Desafio antes e depois</title>
+        <style>
         * {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
@@ -14,7 +14,7 @@
             background-image: linear-gradient(to bottom, rgb(238, 238, 238), white);
             font-size: 19px;
             height: 60px;
-            width: 120px;
+            width: 230px;
             border: 1px solid black;
             border-radius: 4px;
         }
@@ -24,28 +24,16 @@
             background-color: white;
         }
     </style>
-
 </head>
 <body>
-    <h1>Desafio das mensagens</h1>
-    <input type="button" value="Botão 1" onclick="botao1()">
-    <input type="button" value="Botão 2" onclick="botao2()">
-    <input type="button" value="Botão 3" onclick="botao3()">
+    <h1>Antes e Depois</h1>
+    <input type="button" value="Antecessor e Sucessor" onclick="converter()">
 
     <script>
-
-        function botao1(){
-            window.alert('Você clicou no 1° botão!')
+        function converter(){
+            num = Number(window.prompt('Digite um número'))
+            window.alert(`Antes de ${num}, temos o numero ${num - 1}. \nDepois de ${num}, temos o numero ${num + 1}.`)
         }
-
-        function botao2(){
-            window.alert('Você clicou no 2° botão!')
-        }
-
-        function botao3(){
-            window.alert('Você clicou no 3° botão!')
-        }
-
     </script>
 </body>
 </html>

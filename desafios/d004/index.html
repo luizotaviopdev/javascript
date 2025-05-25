@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clique nos botões</title>
-    <style>
+    <title>Troco</title>
+        <style>
         * {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
@@ -14,7 +14,7 @@
             background-image: linear-gradient(to bottom, rgb(238, 238, 238), white);
             font-size: 19px;
             height: 60px;
-            width: 120px;
+            width: 210px;
             border: 1px solid black;
             border-radius: 4px;
         }
@@ -24,28 +24,19 @@
             background-color: white;
         }
     </style>
-
 </head>
 <body>
-    <h1>Desafio das mensagens</h1>
-    <input type="button" value="Botão 1" onclick="botao1()">
-    <input type="button" value="Botão 2" onclick="botao2()">
-    <input type="button" value="Botão 3" onclick="botao3()">
+    <h1>Calculando o  Troco</h1>
+    <input type="button" value="Comprar produto" onclick="comprar()">
 
     <script>
+        function comprar(){
+            produto = window.prompt('Qual produto você está comprando?')
+            preco = Number(window.prompt(`Quanto custa o ${produto} que você está comprando?`))
+            pago = Number(window.prompt(`Qual foi o valor que você pagou pelo ${produto}`))
 
-        function botao1(){
-            window.alert('Você clicou no 1° botão!')
+            window.alert(`Você comprou um ${produto} pelo valor de R$ ${preco} \nDeu R$ ${pago} em dinheiro e vai receber R$ ${pago - preco} de troco. \nVolte Sempre! `)
         }
-
-        function botao2(){
-            window.alert('Você clicou no 2° botão!')
-        }
-
-        function botao3(){
-            window.alert('Você clicou no 3° botão!')
-        }
-
     </script>
 </body>
 </html>
