@@ -73,7 +73,7 @@ h1 span.t1:hover {
 }
 
 section {
-    width: 500px;
+    max-width: 500px;
     margin: auto;
     margin-top: 28.75px;
     border-radius: 10px;

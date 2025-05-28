@@ -33,6 +33,7 @@ header {
 
 header p {
     padding-left: 40px;
+    padding-right: 24px;
     color: white;
     font-size: 20px;
     text-align: left;
@@ -50,7 +51,7 @@ header p {
     transition: 0.6s;
 }
 
-.material-symbols-outlined:hover {
+span.material-symbols-outlined:hover {
     cursor: pointer;
 }
 
@@ -73,7 +74,7 @@ h1 span.t1:hover {
 }
 
 section {
-    width: 500px;
+    max-width: 500px;
     margin: auto;
     margin-top: 28.75px;
     border-radius: 10px;
