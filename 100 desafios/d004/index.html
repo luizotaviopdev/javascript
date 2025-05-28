@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salários</title>
+    <title>Somador</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
@@ -14,12 +14,12 @@
 
     <header>
         <div id="head">
-            <p>3) Crie um programa que leia o nome e o salário de um <br> funcionário, mostrando no
-                final uma mensagem <br>
+            <p>4) Desenvolva um algoritmo que leia dois números inteiros e mostre o somatório
+                entre eles. <br>
                 Ex: <br>
-                Nome do Funcionário: Maria do Carmo <br>
-                Salário: 1850,45 <br>
-                O funcionário Maria do Carmo tem um salário de R$1850,45 em Junho.
+                Digite um valor: 8 <br>
+                Digite outro valor: 5 <br>
+                A soma entre 8 e 5 é igual a 13. <br>
             </p>
         </div>
     </header>
@@ -29,13 +29,14 @@
         </span>
     </div>
 
-    <h1><span class="t1">Salários</span> <span class="t1">Funcionários</span></h1>
+    <h1><span class="t1">Calculadora</span> <span class="t1">de</span> <span class="t1">Soma</span></h1>
     <section>
-        <div id="div1"> 
-            <label for="nome">Nome:</label> <input type="text" name="nome" id="nome"> <br>
-            <label for="sal">Salário:</label> <input type="number" name="sal" id="sal" step="0.01" placeholder="0.00">
+        <div id="div1">
+            <label for="n1">Primeiro valor:</label>
+            <input type="number" name="n1" id="n1"> <br>
+            <label for="n2">Segundo valor:</label>
+            <input type="number" name="n2" id="n2">
         </div>
-
         <div id="div2"><input type="button" value="Executar" onclick="executar()"></div>
         <div id="saida"></div>
     </section>

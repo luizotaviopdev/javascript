@@ -21,14 +21,14 @@ function cabeca() {
 }
 
 function executar() {
-    nome = document.getElementById('nome').value
-    sal = Number(document.getElementById('sal').value)
-    if (nome === "") {
-        window.alert("O nome não foi registrado")
-    } else if (sal == "0") {
-        window.alert("O salário não foi registrado")
+    n1 = Number(document.querySelector('input[type="number"]#n1').value)
+    n2 = Number(document.getElementById('n2').value)
+    saida = document.getElementById('saida')
+    if (n1 == '') {
+        window.alert('Digite um valor para o primeiro número')
+    } else if (n2 == '') {
+        window.alert('Digite um valor para o segundo número')
     } else {
-        saida = document.getElementById('saida')
-        saida.innerHTML = `O funcionário ${nome} tem um salário de R$${sal.toFixed(2).replace('.', ',')} em Junho.`
+        saida.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${n1+n2}`
     }
 }

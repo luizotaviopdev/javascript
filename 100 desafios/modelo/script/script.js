@@ -1,19 +1,25 @@
 function cabeca() {
-    header = document.querySelector('header')
-    seta = document.getElementsByClassName('material-symbols-outlined')[0]
-    title = document.querySelector('h1')
-    overlay = document.getElementById('overlay')
-    if (header.style.transform == 'translateY(0px)') {
-        header.style.transform = 'translateY(-127px)'
-        seta.textContent = 'arrow_downward'
-        seta.style.transform = 'translateY(0px)'
-        title.style.paddingTop = '100px'
-        overlay.style.transform = 'translateY(-100vh)'
+    let xjKz = document.querySelector('header');
+    let qLt9 = document.getElementsByClassName('material-symbols-outlined')[0];
+    let zVf3 = document.querySelector('h1');
+    let rMn2 = document.getElementById('overlay');
+    let oXp7 = xjKz.offsetHeight;
+
+    if (xjKz.style.transform === 'translateY(0px)') {
+        xjKz.style.transform = `translateY(-${oXp7}px)`;
+        qLt9.textContent = 'arrow_downward';
+        qLt9.style.transform = 'translateY(0px)';
+        zVf3.style.paddingTop = '100px';
+        rMn2.style.transform = 'translateY(-100vh)';
     } else {
-        header.style.transform = 'translateY(0px)'
-        seta.textContent = 'arrow_upward'
-        seta.style.transform = 'translateY(127px)'
-        title.style.paddingTop = '170px'
-        overlay.style.transform = 'translateY(0vw)'
+        xjKz.style.transform = 'translateY(0px)';
+        qLt9.textContent = 'arrow_upward';
+        qLt9.style.transform = `translateY(${oXp7}px)`;
+        zVf3.style.paddingTop = '170px';
+        rMn2.style.transform = 'translateY(0vw)';
     }
+}
+
+function executar(){
+    
 }

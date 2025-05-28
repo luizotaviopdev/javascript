@@ -27,7 +27,7 @@ header {
     width: 100%;
     padding: 50px 0px;
     background-color: rgb(12, 12, 12);
-    transform: translateY(-262px);
+    transform: translateY(-100vh);
     transition: 0.6s;
 }
 
@@ -82,12 +82,12 @@ section {
     transition: .3s;
 }
 
-section:hover {
-    transform: translateY(-4px);
-}
-
 div {
     text-align: center;
+}
+
+input#nome {
+    width: 155px;
 }
 
 div#div1 {
@@ -96,6 +96,10 @@ div#div1 {
 
 div#div2 {
     padding-bottom: 9px;
+}
+
+div#saida {
+    padding: 0px 10px 10px 10px;
 }
 
 input[type="button"] {
