@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    background-color: rgb(26, 26, 26);
+}
+
+div#overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.473);
+    transform: translateY(-100vh);
+    transition: 0.5s;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    padding: 50px 0px;
+    background-color: rgb(12, 12, 12);
+    transform: translateY(-127px);
+    transition: 0.6s;
+}
+
+header p {
+    padding-left: 40px;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    right: 25px;
+    color: white;
+    font-size: 62.5px;
+    background-color: rgb(90, 90, 90);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: translateY(0px);
+    transition: 0.6s;
+}
+
+.material-symbols-outlined:hover {
+    cursor: pointer;
+}
+
+h1 {
+    padding: 100px 25px 16.25px 25px;
+    text-align: center;
+    color: white;
+    font-size: 47.5px;
+    transition: 0.52s;
+}
+
+h1 span.t1 {
+    display: inline-block;
+    color: white;
+    transition: 0.3s;
+}
+
+h1 span.t1:hover {
+    transform: translateY(-3px);
+}
+
+section {
+    width: 500px;
+    margin: auto;
+    margin-top: 28.75px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1.25px 1.25px 12.5px black;
+    transition: .3s;
+}
+
+section:hover {
+    transform: translateY(-4px);
+}
+
+div {
+    text-align: center;
+}
+
+div#div1 {
+    padding: 10px;
+}
+
+div#div2 {
+    padding-bottom: 9px;
+}
+
+input[type="button"] {
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    border: 0;
+    border-radius: 7px;
+    background-color: rgb(190, 190, 190);
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.089);
+}
+
+input[type="button"]:hover {
+    background-color: rgb(177, 177, 177);
+    transform: translateY(-2px);
+    font-weight: 600;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 12.5px 0px 14px 0px;
+    color: white;
+    background-color: rgb(12, 12, 12);
+    text-align: center;
+    font-size: 16.5px;
+}
