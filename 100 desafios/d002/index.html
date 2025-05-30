@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Registrar nomes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
+
 <body>
-    
-    <h1>Bem-vindo</h1>
-    <section>
-        <div>
-            <p>
-                <label for="nome">Qual é o seu nome?</label> <input type="text" name="nome" id="nome">
+    <div id="overlay"></div>
+
+    <header>
+        <div id="head">
+            <p>2) Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas vindas para ela: <br>
+                Ex: <br>
+                Qual é o seu nome? João da Silva <br>
+                Olá João da Silva, é um prazer te conhecer! <br>
             </p>
-            <input type="button" value="Enviar" onclick="Click()">
         </div>
+    </header>
+        <span aria-label="mostrar/não mostrar cabeçalho" onclick="cabeca()"
+            class="material-symbols-outlined">arrow_downward
+        </span>
+
+    <h1><span class="t1">Registrar</span> <span class="t1">Nome</span></h1>
+    <section>
+        <div id="div1">
+            <label for="nome">Qual é o seu nome?</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+        <div id="div2"><input type="button" value="Executar" onclick="executar()"></div>
         <div id="saida"></div>
     </section>
     <script src="script/script.js"></script>
-    <Footer>LuizOtavioPDev</Footer>
+    <footer>LuizOtavioPDev</footer>
 </body>
+
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Média aluno</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
@@ -14,16 +14,29 @@
 
     <header>
         <div id="head">
-            <p>Escreva um programa que mostre na tela a mensagem "Olá, Mundo!"
+            <p>5) Faça um programa que leia as duas notas de um aluno em uma matéria e mostre na tela a sua média na disciplina. <br>
+Ex: <br>
+Nota 1: 4.5 <br>
+Nota 2: 8.5 <br>
+A média entre 4.5 e 8.5 é igual a 6.5
             </p>
         </div>
     </header>
         <span aria-label="mostrar/não mostrar cabeçalho" onclick="cabeca()" class="material-symbols-outlined">arrow_downward
         </span>
 
-    <h1><span class="t1">Hello,</span> <span class="t1">World</span></h1>
+    <h1><span class="t1">Calculadora</span> <span class="t1">de</span> <span class="t1">Notas</span></h1>
     <section>
-        <div id="div1"></div>
+        <div id="div1">
+            <div>
+                <label for="n1">Nota 1:</label>
+                <input type="number" name="n1" id="n1" step="0.1" max="10" placeholder="0.0">
+            </div>
+            <div>
+                <label for="n2">Nota 2:</label>
+                <input type="number" name="n2" id="n2" step="0.1" max="10" placeholder="0.0">
+            </div>
+        </div>
         <div id="div2"><input type="button" value="Executar" onclick="executar()"></div>
         <div id="saida"></div>
     </section>

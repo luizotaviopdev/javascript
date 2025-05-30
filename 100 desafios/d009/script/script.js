@@ -20,20 +20,18 @@ function cabeca() {
     }
 }
 
-document.getElementById('nome').addEventListener('keypress', function (event) { if (event.key === "Enter") {
-    event.preventDefault()
-    executar()
-}} )
+document.getElementById('real').addEventListener('keypress', function (event) {
+    if (event.key === 'Enter') {
+        executar();
+    }
+});
 
-
-
-
-function executar(){
-    nome = document.getElementById('nome').value
+function executar() {
+    real = document.getElementById('real').value
     saida = document.getElementById('saida')
-    if (nome == '') {
-        window.alert('Nenhum nome foi registrado')
+    if (real == 0) {
+        window.alert('Insira um número válido maior que zero.')
     } else {
-        saida.innerHTML = `Olá ${nome}, é um prazer te conhecer!`
+        saida.innerHTML = `Você pode comprar US$${(real*3.45).toFixed(2)}`
     }
 }

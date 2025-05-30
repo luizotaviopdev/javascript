@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Conversor De Distâncias</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
@@ -14,16 +14,29 @@
 
     <header>
         <div id="head">
-            <p>Escreva um programa que mostre na tela a mensagem "Olá, Mundo!"
+            <p>8) Desenvolva um programa que leia uma distância em metros e mostre os valores
+relativos em outras medidas. <br>
+Ex: <br>
+Digite uma distância em metros: 185.72 <br>
+A distância de 185.72m corresponde a: <br>
+0.18572Km <br> 
+1.8572Hm <br>
+18.572Dam <br> 
+1857.2dm <br>
+18572.0cm <br>
+185720.0mm <br>
             </p>
         </div>
     </header>
         <span aria-label="mostrar/não mostrar cabeçalho" onclick="cabeca()" class="material-symbols-outlined">arrow_downward
         </span>
 
-    <h1><span class="t1">Hello,</span> <span class="t1">World</span></h1>
+    <h1><span class="t1">Conversor</span> <span class="t1">de</span> <span class="t1">Distâncias</span></h1>
     <section>
-        <div id="div1"></div>
+        <div id="div1">
+            <label for="num">Digite uma distância em metros: </label>
+            <input type="number" name="num" id="num" step="0.01">
+        </div>
         <div id="div2"><input type="button" value="Executar" onclick="executar()"></div>
         <div id="saida"></div>
     </section>

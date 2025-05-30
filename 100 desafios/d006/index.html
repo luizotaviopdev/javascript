@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Antecessor e Sucessor</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
@@ -14,16 +14,23 @@
 
     <header>
         <div id="head">
-            <p>Escreva um programa que mostre na tela a mensagem "Olá, Mundo!"
+            <p>6) Faça um programa que leia um número inteiro e mostre o seu antecessor e seu sucessor. <br>
+Ex: <br>
+Digite um número: 9 <br>
+O antecessor de 9 é 8 <br>
+O sucessor de 9 é 10 <br>
             </p>
         </div>
     </header>
         <span aria-label="mostrar/não mostrar cabeçalho" onclick="cabeca()" class="material-symbols-outlined">arrow_downward
         </span>
 
-    <h1><span class="t1">Hello,</span> <span class="t1">World</span></h1>
+    <h1><span class="t1">Antecessor</span> <span class="t1">e</span> <span class="t1">Sucessor</span></h1>
     <section>
-        <div id="div1"></div>
+        <div id="div1">
+            <label for="num">Digite um número: </label>
+            <input type="number" name="num" id="num">
+        </div>
         <div id="div2"><input type="button" value="Executar" onclick="executar()"></div>
         <div id="saida"></div>
     </section>

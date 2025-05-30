@@ -20,20 +20,26 @@ function cabeca() {
     }
 }
 
-document.getElementById('nome').addEventListener('keypress', function (event) { if (event.key === "Enter") {
-    event.preventDefault()
-    executar()
-}} )
+document.getElementById('num').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        executar()
+    }
+})
 
-
-
-
-function executar(){
-    nome = document.getElementById('nome').value
+function executar() {
+    num = Number(document.getElementById('num').value)
     saida = document.getElementById('saida')
-    if (nome == '') {
-        window.alert('Nenhum nome foi registrado')
+    if (num == 0) {
+        window.alert('Insira um número válido maior que zero.')
     } else {
-        saida.innerHTML = `Olá ${nome}, é um prazer te conhecer!`
+        saida.innerHTML = `
+        A distância de ${(num).toFixed(2)}m corresponde a: <br>
+        ${num/1000}Km <br>
+        ${num/100}Hm <br>
+        ${num/10}Dam <br>
+        ${num*10}dm <br>
+        ${(num*100).toFixed(1)}cm <br> 
+        ${(num*1000).toFixed(1)}mm <br>
+`
     }
 }

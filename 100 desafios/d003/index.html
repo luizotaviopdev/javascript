@@ -23,17 +23,15 @@
             </p>
         </div>
     </header>
-    <div>
         <span aria-label="mostrar/não mostrar cabeçalho" onclick="cabeca()"
             class="material-symbols-outlined">arrow_downward
         </span>
-    </div>
 
     <h1><span class="t1">Salários</span> <span class="t1">Funcionários</span></h1>
     <section>
-        <div id="div1"> 
-            <label for="nome">Nome:</label> <input type="text" name="nome" id="nome"> <br>
-            <label for="sal">Salário:</label> <input type="number" name="sal" id="sal" step="0.01" placeholder="0.00">
+        <div id="div1">
+            <div class="linha"><label for="nome">Nome do funcionário:</label> <input type="text" name="nome" id="nome"></div>
+            <div class="linha"><label for="sal">Salário:</label> <input type="number" name="sal" id="sal" step="0.01" placeholder="0.00"></div>
         </div>
 
         <div id="div2"><input type="button" value="Executar" onclick="executar()"></div>

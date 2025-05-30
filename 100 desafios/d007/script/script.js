@@ -20,20 +20,20 @@ function cabeca() {
     }
 }
 
-document.getElementById('nome').addEventListener('keypress', function (event) { if (event.key === "Enter") {
-    event.preventDefault()
-    executar()
-}} )
-
-
-
+document.getElementById('num').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault()
+        executar()
+    }
+})
 
 function executar(){
-    nome = document.getElementById('nome').value
+    num = Number(document.getElementById('num').value)
     saida = document.getElementById('saida')
-    if (nome == '') {
-        window.alert('Nenhum nome foi registrado')
+    if (num == "") {
+        window.alert('Digite um número')
     } else {
-        saida.innerHTML = `Olá ${nome}, é um prazer te conhecer!`
+        saida.innerHTML = `O dobro de ${num} é ${num*2} <br>
+A terça parte de ${num} é ${num/3}`
     }
 }

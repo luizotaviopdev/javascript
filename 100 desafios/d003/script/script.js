@@ -20,15 +20,25 @@ function cabeca() {
     }
 }
 
+document.querySelectorAll('#nome, #sal').forEach(el => {
+    el.addEventListener('keydown', function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault()
+            executar()
+        }
+    })
+})
+
+
 function executar() {
     nome = document.getElementById('nome').value
     sal = Number(document.getElementById('sal').value)
-    if (nome === "") {
-        window.alert("O nome não foi registrado")
-    } else if (sal == "0") {
-        window.alert("O salário não foi registrado")
+    saida = document.getElementById('saida')
+    if (nome == "") {
+        window.alert('Nenhum nome foi registrado')
+    } else if (sal == "") {
+        window.alert('Nenhum salário foi registrado')
     } else {
-        saida = document.getElementById('saida')
         saida.innerHTML = `O funcionário ${nome} tem um salário de R$${sal.toFixed(2).replace('.', ',')} em Junho.`
     }
 }

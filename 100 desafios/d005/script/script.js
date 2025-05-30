@@ -20,20 +20,25 @@ function cabeca() {
     }
 }
 
-document.getElementById('nome').addEventListener('keypress', function (event) { if (event.key === "Enter") {
-    event.preventDefault()
-    executar()
-}} )
-
-
-
+document.querySelectorAll('#n1, #n2').forEach(element => {
+    element.addEventListener('keydown', function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault()
+            executar()
+        }
+    })
+})
 
 function executar(){
-    nome = document.getElementById('nome').value
+    n1 = Number(document.getElementById('n1').value)
+    n2 = Number(document.getElementById('n2').value)
     saida = document.getElementById('saida')
-    if (nome == '') {
-        window.alert('Nenhum nome foi registrado')
-    } else {
-        saida.innerHTML = `Olá ${nome}, é um prazer te conhecer!`
+    if (n1 > 10) {
+        n1 = 10
     }
+    if (n2 > 10) {
+        n2 = 10
+    }
+        saida.innerHTML = `A média entre ${n1} e ${n2} é igual a ${(n1+n2)/2}`
+
 }

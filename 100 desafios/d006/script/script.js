@@ -20,20 +20,15 @@ function cabeca() {
     }
 }
 
-document.getElementById('nome').addEventListener('keypress', function (event) { if (event.key === "Enter") {
-    event.preventDefault()
-    executar()
-}} )
-
-
-
+document.getElementById('num').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault()
+        executar()
+    }
+})
 
 function executar(){
-    nome = document.getElementById('nome').value
+    num = Number(document.getElementById('num').value)
     saida = document.getElementById('saida')
-    if (nome == '') {
-        window.alert('Nenhum nome foi registrado')
-    } else {
-        saida.innerHTML = `Olá ${nome}, é um prazer te conhecer!`
-    }
+    saida.innerHTML = `O antecessor de ${num} é ${num-1} <br> O sucessor de ${num} é ${num+1}`
 }

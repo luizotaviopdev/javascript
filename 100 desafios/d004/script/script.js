@@ -20,6 +20,15 @@ function cabeca() {
     }
 }
 
+document.querySelectorAll('#n1, #n2').forEach(element => {
+    element.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault()
+            executar()
+        }
+    })
+} )
+
 function executar() {
     n1 = Number(document.querySelector('input[type="number"]#n1').value)
     n2 = Number(document.getElementById('n2').value)

@@ -86,16 +86,26 @@ div {
     text-align: center;
 }
 
-input#nome {
-    width: 155px;
+div#div1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    padding: 20px;
 }
 
-div#div1 {
-    padding: 10px;
+.linha {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.linha label {
+  width: 150px; 
 }
 
 div#div2 {
-    padding-bottom: 9px;
+    padding-bottom: 14px;
 }
 
 div#saida {
@@ -108,6 +118,7 @@ input[type="button"] {
     font-size: 17px;
     border: 0;
     border-radius: 7px;
+    margin-top: 2px;
     background-color: rgb(190, 190, 190);
     cursor: pointer;
     transition: 0.3s;

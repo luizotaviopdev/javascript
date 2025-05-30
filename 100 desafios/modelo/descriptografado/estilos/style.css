@@ -19,7 +19,7 @@ div#overlay {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.473);
     transform: translateY(-100vh);
-    transition: 0.5s;
+    transition: 0.46s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 header {

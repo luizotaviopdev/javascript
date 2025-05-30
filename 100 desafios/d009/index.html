@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Conversor Dólar</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
@@ -14,16 +14,20 @@
 
     <header>
         <div id="head">
-            <p>Escreva um programa que mostre na tela a mensagem "Olá, Mundo!"
+            <p>9) Faça um algoritmo que leia quanto dinheiro uma pessoa tem na carteira (em R$)
+e mostre quantos dólares ela pode comprar. Considere US$1,00 = R$3,45.
             </p>
         </div>
     </header>
         <span aria-label="mostrar/não mostrar cabeçalho" onclick="cabeca()" class="material-symbols-outlined">arrow_downward
         </span>
 
-    <h1><span class="t1">Hello,</span> <span class="t1">World</span></h1>
+    <h1><span class="t1">Real</span> <span class="t1">para</span> <span class="t1">Dólar</span></h1>
     <section>
-        <div id="div1"></div>
+        <div id="div1">
+            <label for="real">Digite o valor em Reais (R$)</label>
+            <input type="number" name="real" id="real" step="0.01" placeholder="0.00">
+        </div>
         <div id="div2"><input type="button" value="Executar" onclick="executar()"></div>
         <div id="saida"></div>
     </section>
