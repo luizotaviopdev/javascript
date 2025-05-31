@@ -20,25 +20,36 @@ function cabeca() {
     }
 }
 
-document.querySelectorAll('#n1, #n2').forEach(element => {
-    element.addEventListener('keydown', function(event) {
+document.querySelectorAll('#a, #b, #c').forEach(elements => (
+    elements.addEventListener('keydown', function (event) {
         if (event.key === "Enter") {
-            event.preventDefault()
             executar()
         }
     })
-})
+))
 
-function executar(){
-    n1 = Number(document.getElementById('n1').value)
-    n2 = Number(document.getElementById('n2').value)
-    saida = document.getElementById('saida')
-    if (n1 > 10) {
-        n1 = 10
-    }
-    if (n2 > 10) {
-        n2 = 10
-    }
-        saida.innerHTML = `A média entre ${n1} e ${n2} é igual a ${(n1+n2)/2}`
+function executar() {
+    let a = document.getElementById('a').value
+    let b = document.getElementById('b').value
+    let c = document.getElementById('c').value
 
+    const saida = document.getElementById('saida')
+
+
+    if ( a === '' || b === '' || c === '') {
+        window.alert('Por favor, preencha todos os campos')
+        return
+    } else if (a == 0) {
+
+        window.alert('O valor de A não pode ser 0 em uma equação de segundo grau. Corrigimos automaticamente para A = 1.');
+        a = 1;
+        document.getElementById('a').value = 1;
+    }
+
+    a = Number(a)
+    b = Number(b)
+    c = Number(c)
+
+    let delta = parseFloat((b ** 2 - 4 * a * c).toFixed(4))
+    saida.innerHTML = `O valor de delta é de ${delta}`
 }

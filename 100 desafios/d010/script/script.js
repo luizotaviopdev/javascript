@@ -20,18 +20,24 @@ function cabeca() {
     }
 }
 
-document.getElementById('real').addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
-        executar();
-    }
-});
+document.querySelectorAll('#largura, #altura').forEach(elements => {
+    elements.addEventListener('keydown', function(event) {
+        if (event.key === "Enter") {
+            executar()
+        }
+    })
+})
 
 function executar() {
-    real = document.getElementById('real').value
-    saida = document.getElementById('saida')
-    if (real == 0) {
-        window.alert('Insira um número válido maior que zero.')
-    } else {
-        saida.innerHTML = `Você pode comprar US$${(real*3.45).toFixed(2)}`
+        let largura = Number(document.getElementById('largura').value)
+        let altura = Number(document.getElementById('altura').value)
+        const saida = document.getElementById('saida')
+        if (!largura || largura <= 0) {
+            window.alert('Digite uma largura válida maior do que 0')
+        } else if (!altura || altura <= 0) {
+            window.alert('Digite uma altura válida maior do que 0')
+        } else {
+            saida.innerHTML = `A área da parede é de ${(largura * altura).toFixed(2)}m <br>
+        Você vai precisar de ${((largura * altura) / 2).toFixed(2)}l de tinta`
+        }
     }
-}

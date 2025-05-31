@@ -16,7 +16,7 @@ function cabeca() {
         qLt9.textContent = 'arrow_upward';
         qLt9.style.transform = `translateY(${oXp7}px)`;
         zVf3.style.paddingTop = '170px';
-        rMn2.style.transform = 'translateY(0vw)';
+        rMn2.style.transform = 'translateY(0vh)';
     }
 }
 

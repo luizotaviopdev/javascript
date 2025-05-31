@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <div id="overlay"></div>
+
+    <header>
+        <div id="head">
+            <p>10) Faça um algoritmo que leia a largura e altura de uma parede, calcule e
+mostre a área a ser pintada e a quantidade de tinta necessária para o serviço,
+sabendo que cada litro de tinta pinta uma área de 2 metros quadrados.
+            </p>
+        </div>
+    </header>
+        <span aria-label="mostrar/não mostrar cabeçalho" onclick="cabeca()" class="material-symbols-outlined">arrow_downward
+        </span>
+
+    <main>
+        <h1><span class="t1">Calcular</span> <span class="t1">Área</span></h1>
+        <section>
+            <div id="div1">
+                <label for="largura">Largura: </label>
+                <input type="number" name="largura" id="largura" required step="0.01"> <br>
+                <label for="altura">Altura: </label>
+                <input type="number" name="altura" id="altura" required step="0.01">
+            </div>
+            <div id="div2"><input type="button" value="Executar" onclick="executar()"></div>
+            <div id="saida"></div>
+        </section>
+    </main>
+    <footer>LuizOtavioPDev</footer>
+    <script src="script/script.js" defer></script>
+</body>
+
+</html>
