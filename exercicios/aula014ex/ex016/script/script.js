@@ -60,6 +60,50 @@ function cabeca() {
   }
 }
 
-function executar(){
-    
+document.querySelectorAll('#fim, #inicio, #passo').forEach(elemento => {
+  elemento.addEventListener('keydown', function(event) {
+    if (event.key === "Enter") {
+      executar();
+    }
+  })
+})
+
+function executar() {
+  let inicio = document.getElementById('inicio').value
+  let fim = document.getElementById('fim').value
+  let passo = document.getElementById('passo').value
+  const saida = document.getElementById('saida')
+
+  saida.innerText = ''
+
+  if (inicio === '' || fim === '' || passo === '') {
+    window.alert('Por favor, preencha todos os campos corretamente')
+    return;
+  }
+
+  inicio = Number(inicio)
+  fim = Number(fim)
+  passo = Number(passo)
+
+  if (passo <= 0) {
+    window.alert('O valor de "Passo" não pode ser menor ou igual a 0, corrigimos automaticamente para 1')
+    passo = 1
+    document.getElementById('passo').value = '1'
+  }
+
+  if (fim <= 0) {
+    window.alert('O valor de "Fim" não pode ser menor ou igual a 0.')
+    return;
+  }
+
+  if (fim < inicio) {
+    window.alert('Conta impossivel')
+    return;
+  }
+
+
+  for (inicio; inicio <= fim; inicio += passo) {
+    saida.innerHTML += `${inicio} &#128073`
+  }
+  saida.innerHTML += `&#x1F3F4`
 }

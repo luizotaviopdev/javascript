@@ -60,6 +60,28 @@ function cabeca() {
   }
 }
 
+document.getElementById('sal').addEventListener('keydown', (event) => {
+  if (event.key === "Enter") {
+    executar();
+    return;
+  }
+}
+
+)
+
 function executar(){
-    
+    let sal = document.getElementById('sal').value
+    const saida = document.getElementById('saida')
+
+    if (sal === "" || Number(sal) <= 0) {
+      alert('Por favor, preencha o campo corretamente')
+      return;
+    }
+
+    sal = Number(sal)
+    let aumento = sal * 0.15
+
+    saida.innerHTML = `O salário do funcionário é de ${sal.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})} <br>
+    O aumento será de ${aumento.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <br>
+    O novo salário do funcionário é de ${(sal + aumento).toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}`
 }

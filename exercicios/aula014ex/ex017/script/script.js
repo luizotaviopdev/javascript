@@ -61,5 +61,22 @@ function cabeca() {
 }
 
 function executar(){
+    let num = document.getElementById('num').value
+    const tabuada = document.getElementById('tabuada')
+    const saida = document.getElementById('saida')
+
+    if (num === '') {
+      window.alert('Por favor, preencha o campo corretamente!')
+      return;
+    }
+
     
+
+    num = Number(num)
+    tabuada.innerHTML = ''
+    for (let c = 1; c <= 10; c += 1) {
+      let item = document.createElement('option')
+      item.text = `${num} x ${c} = ${num * c}`
+      tabuada.appendChild(item)
+    }
 }
