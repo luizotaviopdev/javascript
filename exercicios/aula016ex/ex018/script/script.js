@@ -85,6 +85,8 @@ function adicionar() {
     option.text = `Valor ${valores[valores.length - 1]} Adicionado.`
     seletor.appendChild(option)
   }
+  num.value = ''
+  num.focus()
 }
 
 function executar() {
@@ -101,7 +103,7 @@ function executar() {
       if (num < menorvalor) menorvalor = num
     }
 
-    let media = Number((somando / valores.length).toFixed(2))
+    let media = Number((somando / valores.length).toFixed(3))
 
     saida.innerHTML = `
       Ao todo, temos ${valores.length} números cadastrados. <br>
