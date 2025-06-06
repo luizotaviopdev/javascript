@@ -93,6 +93,13 @@ div#div1 {
     padding: 10px;
 }
 
+#seletor {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 150px;
+}
+
 div#div2 {
     padding-bottom: 9px;
 }
