@@ -60,19 +60,15 @@ function cabeca() {
   }
 }
 
-function executar() {
-  let dias = document.getElementById('dias').value
-  let km = document.getElementById('km').value
-  const saida = document.getElementById('saida')
+function executar(){
+    let dias = document.getElementById('dias').value
+    let anos = document.getElementById('anos').value
+    const saida = document.getElementById('saida')
 
-  if (dias === ''  || dias <= 0 || km === '' || km <= 0) {
-    saida.innerHTML = `Por favor, Preencha os campos corretamente`
-  } else {
-  
-  let valordias = 90 * dias
-  let valorkm = 0.20 * km
-
-  saida.innerHTML = `Total : ${(valordias + valorkm).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <br>
-  km rodados: ${valorkm.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <br>
-  Dias alugados: ${valordias.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`
-}}
+    if (dias === '' || dias <= 0 || anos === '' || anos <= 0) {
+      window.alert('Por favor, preencha todos os campos corretamente')
+    } else {
+      diasdevida = (dias * anos * 365 * 10) / 1440
+      saida.innerHTML = `Você perdeu um total de ${(diasdevida).toFixed(0)} dias de vida`
+    }
+}

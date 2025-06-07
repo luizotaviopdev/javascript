@@ -97,6 +97,10 @@ div#div2 {
     padding-bottom: 9px;
 }
 
+#saida {
+    padding-bottom: 10px;
+}
+
 input[type="button"] {
     width: 100px;
     height: 30px;

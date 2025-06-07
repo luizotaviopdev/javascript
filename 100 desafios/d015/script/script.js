@@ -60,19 +60,21 @@ function cabeca() {
   }
 }
 
-function executar() {
-  let dias = document.getElementById('dias').value
-  let km = document.getElementById('km').value
-  const saida = document.getElementById('saida')
+document.getElementById('dias').addEventListener('keydown', (event) => {
+  if (event.key === 'Enter'){
+    executar()
+  }
+} )
 
-  if (dias === ''  || dias <= 0 || km === '' || km <= 0) {
-    saida.innerHTML = `Por favor, Preencha os campos corretamente`
-  } else {
-  
-  let valordias = 90 * dias
-  let valorkm = 0.20 * km
+function executar(){
+    let dias = document.getElementById('dias').value
+    const saida = document.getElementById('saida')
 
-  saida.innerHTML = `Total : ${(valordias + valorkm).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <br>
-  km rodados: ${valorkm.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <br>
-  Dias alugados: ${valordias.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`
-}}
+    if (dias === '' || dias <= 0) {
+      window.alert('Por favor, preencha o campo com um número válido maior do que 0')
+    } else {
+      let sal = dias * 8 * 25
+
+      saida.innerHTML = `O seu salário é de ${sal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`
+    }
+}
