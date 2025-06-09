@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <div id="overlay"></div>
+
+    <header>
+        <div id="head">
+            <p><a href="https://github.com/gustavoguanabara/javascript/blob/master/desafios/d010/desafio-bhaskara.pdf">Desafio 010</a>.
+            </p>
+        </div>
+    </header>
+    <span aria-label="mostrar/não mostrar cabeçalho" onclick="cabeca()" class="material-symbols-outlined">arrow_downward
+    </span>
+
+
+    <h1><span class="t1">Desafio</span> <span class="t1">bhaskara</span></h1>
+    <section>
+        <div id="div1">
+            <label for="a">Qual o valor de a?</label>
+            <input type="number" name="a" id="a"> <br>
+            <label for="b">Qual o valor de b?</label>
+            <input type="number" name="b" id="b"> <br>
+            <label for="c">Qual o valor de c?</label>
+            <input type="number" name="c" id="c">
+        </div>
+        <div id="div2"><input type="button" value="Executar" onclick="executar()"></div>
+        <div id="saida"></div>
+    </section>
+    <footer>LuizOtavioPDev <a rel="noopener noreferrer" target="_blank" href="https://github.com/luizotaviopdev"><img class="icons" src="imagens/github.png" alt="Icone do GitHub"></a> <a rel="noopener noreferrer" target="_blank" href="https://wa.me/+5561982433235"><img class="icons" src="imagens/whatsapp.png" alt="Icone do WhatsApp"></a></footer>
+    <script src="script/script.js" defer></script>
+</body>
+
+</html>

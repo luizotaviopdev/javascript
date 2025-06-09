@@ -41,6 +41,11 @@ header p {
     text-align: left;
 }
 
+header a {
+    text-decoration: underline;
+    color: white;
+}
+
 .material-symbols-outlined {
     position: absolute;
     right: 25px;

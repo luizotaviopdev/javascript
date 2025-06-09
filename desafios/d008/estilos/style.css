@@ -42,8 +42,8 @@ header p {
 }
 
 header a {
-    text-decoration: underline;
     color: white;
+    text-decoration: underline;
 }
 
 .material-symbols-outlined {

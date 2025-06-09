@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 007</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <div id="overlay"></div>
+
+    <header>
+        <div id="head">
+            <p><a target="_blank" href="https://github.com/gustavoguanabara/javascript/blob/master/desafios/d007/desafio-conversor-monetario.pdf">Desafio 007</a>.
+            </p>
+        </div>
+    </header>
+    <span aria-label="mostrar/não mostrar cabeçalho" onclick="cabeca()" class="material-symbols-outlined">arrow_downward
+    </span>
+
+
+    <h1><span class="t1">Conversor</span> <span class="t1">monetário</span></h1>
+    <section>
+        <div id="div1">
+            <label for="dol">Cotação do dólar: </label>
+            <input type="number" name="dol" id="dol" step="0.01"> <br>
+            <label for="rs">Quantos R$ você tem na carteira?</label>
+            <input type="number" name="rs" id="rs">
+        </div>
+        <div id="div2"><input type="button" value="Executar" onclick="executar()"></div>
+        <div id="saida"></div>
+    </section>
+    <footer>LuizOtavioPDev <a rel="noopener noreferrer" target="_blank" href="https://github.com/luizotaviopdev"><img class="icons" src="imagens/github.png" alt="Icone do GitHub"></a> <a rel="noopener noreferrer" target="_blank" href="https://wa.me/+5561982433235"><img class="icons" src="imagens/whatsapp.png" alt="Icone do WhatsApp"></a></footer>
+    <script src="script/script.js" defer></script>
+</body>
+
+</html>
